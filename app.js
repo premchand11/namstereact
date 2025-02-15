@@ -12,9 +12,12 @@ caching while devlopment
 compatible with older verrsion
 https on dev
 port number
-consistant hashing
+consistant hashing algorthim
 zero config
 transitvi dependecies imppppppppppppppppppppppppppppppppppp
+tree shaking - removing unwanted
+
+
 
 
 */
@@ -22,11 +25,47 @@ transitvi dependecies imppppppppppppppppppppppppppppppppppp
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading1 = React.createElement("h1", { id: "title" }, "heading1");
-const heading2 = React.createElement("h2", { id: "title" }, "heading2");
-const div = React.createElement("div", { id: "container" }, [
-  heading1,
-  heading2,
-]);
+// const heading1 = React.createElement("h1", { id: "title",key:"h1" }, "heading1");
+// const heading2 = React.createElement("h2", { id: "title",key:"h2" }, "heading2");
+// const div = React.createElement("div", { id: "container" }, [
+//   heading1,
+//   heading2,
+// ]);
+const heading = (
+  <h1 id="title" key="h1">
+    Namaste React
+  </h1>
+);
+// react.createElemnt gives us object then it converts into html(dom)
+
+// jsx=> javascript xml it uses react.createElement then it converts into html
+
+// react eleemnt
+const Title = ()=>(
+  <h1 id="title" key="h1">
+    Namaste React
+  </h1>
+);
+
+// react component
+//functional - new
+//class based -old
+
+const HeaderComponent = () => {
+  return (
+    <div>
+      {1+2}
+      {heading}
+      {Title()}
+      <h2 id="title" key="h1">
+        Namaste React header component
+      </h2>
+      <h2 id="title" key="h2">
+        Namaste React header component2
+      </h2>
+    </div>
+  );
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(div);
+root.render(<HeaderComponent />); 

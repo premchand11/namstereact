@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "jaffa",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -19,11 +21,18 @@
   },
   "homepage": "https://github.com/premchand11/namstereact#readme",
   "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.13.3",
     "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
-  }
+  },
+  "browserslist": [
+    "last 2 chrome versions",
+    "defaults and fully supports es6-module",
+    "maintained node versions"
+  ]
 }
