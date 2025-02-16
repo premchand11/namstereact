@@ -1,0 +1,42 @@
+/*
+hmr=hot module reload
+file watcher algorhthim- c++
+bundeling
+minification
+clean our code
+dev and prod build
+superfast
+image optimisarion
+code splitting
+caching while devlopment
+compatible with older verrsion
+https on dev
+port number
+consistant hashing algorthim
+zero config
+transitvi dependecies imppppppppppppppppppppppppppppppppppp
+tree shaking - removing unwanted
+
+
+
+
+*/
+
+
+// const heading1 = React.createElement("h1", { id: "title",key:"h1" }, "heading1");
+// const heading2 = React.createElement("h2", { id: "title",key:"h2" }, "heading2");
+// const div = React.createElement("div", { id: "container" }, [
+//   heading1,
+//   heading2,
+// ]);
+
+// react.createElemnt gives us object then it converts into html(dom)
+
+// jsx=> javascript xml it uses react.createElement then it converts into html
+
+// react eleemnt
+
+
+// react component
+//functional - new
+//class based -old
