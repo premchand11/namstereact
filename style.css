@@ -1,5 +1,36 @@
-#container{
+.Header{
+   display: flex;
+   justify-content: space-between;
+   margin: 10px;
+   border: 1px solid black;
+}
+
+.Nav-items > ul{
+     list-style-type: none;
+     display: flex;
+
+
+}
+
+.Nav-items>ul>li{
+    padding: 10px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.card{
+    width: 200px;
+    padding: 10px ;
+    margin: 10px ;
+    border: 1px solid black;
+}
+.card>img{
     width: 100%;
-    margin: 0 auto;
-    background-color: #ffea00
+}
+
+.restaurantlist{
+    display: flex;
+    flex-wrap: wrap;
 }
